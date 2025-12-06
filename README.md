@@ -61,7 +61,7 @@ Follow these steps if you want the application to launch automatically when you 
 4. Select the shortcut and press Ctrl+X  
 5. Press Win+R, enter shell:startup, and press Enter  
    - Or manually navigate to:  
-     `C:\Users\YOUR-USER-NAME\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
+     `C:\Users\%USERPROFILE%\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\Startup`
 6. Press Ctrl+V or right-click and select Paste to place the shortcut in the Startup folder
 
 After completing these steps, the application will start automatically when you log in.  
