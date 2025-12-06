@@ -21,7 +21,7 @@ No internet services, no cloud, no telemetry.
 
 ## First-time users (non-developers)
 Start by downloading the **EXE** from the Releases tab:
-https://github.com/Ronnie-Reagan/Dons_System_Monitor/releases
+[Releases](https://github.com/Ronnie-Reagan/Dons_System_Monitor/releases)
 
 1. Place the `.exe` in a folder where you want it to permanently live  
    (for example: Desktop or a utilities/tools folder)
@@ -128,7 +128,7 @@ Passwords are never logged.
 
 ## License
 
-See LICENSE file.
+See [LICENSE](https://raw.githubusercontent.com/Ronnie-Reagan/Dons_System_Monitor/refs/heads/main/LICENSE.txt) file.
 
 ---
 
