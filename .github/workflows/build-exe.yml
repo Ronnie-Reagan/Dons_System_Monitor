@@ -51,11 +51,17 @@ jobs:
       # With:
       #   name="Don's System Monitor"
       - name: Patch spec file to include apostrophe
+        shell: pwsh
         run: |
-          powershell -Command ^
-            "(Get-Content 'Dons System Monitor.spec') ^
-            -replace \"name='Dons System Monitor'\",\"name=\\\"Don's System Monitor\\\"\" ^
-            | Set-Content 'Dons System Monitor.spec'"
+          $specPath = "Dons System Monitor.spec"
+          $content = Get-Content $specPath -Raw
+          $content = $content -replace "name='Dons System Monitor'", 'name="Don''s System Monitor"'
+          Set-Content -Path $specPath -Value $content -Encoding UTF8
+      
+      - name: Verify spec name
+        shell: pwsh
+        run: |
+          Select-String "Don's System Monitor" "Dons System Monitor.spec"
 
       # Step 3: Build using the modified spec file
       - name: Build EXE from patched spec
