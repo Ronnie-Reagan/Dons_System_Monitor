@@ -1,3 +1,5 @@
+The following license applies to psutil
+
 BSD 3-Clause License
 
 Copyright (c) 2009, Jay Loden, Dave Daeschler, Giampaolo Rodola
